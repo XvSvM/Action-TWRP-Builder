@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/XvSvM/TWRP_gamebox_GM8K'
+        default: 'https://github.com/XvSvM/android_device_google_eros-p1'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'gamebox'
+        default: 'eros_p1-eng-10-QP1A.191105.004-413-test-keys'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/gamebox/GM8K'
+        default: 'device/google/eros-p1'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -36,7 +36,7 @@ on:
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_GM8K'
+        default: 'omni_Gamebox'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
