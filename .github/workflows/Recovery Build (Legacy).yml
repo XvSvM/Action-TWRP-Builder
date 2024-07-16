@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/XvSvM/H3_device_dolphin_dolphin_fvd_p1.git'
+        default: 'https://github.com/XvSvM/Gamebox_m98.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'dolphin_fvd_p1-eng-7.0-NRD91N-20230311-test-keys'
+        default: 'eros_p1-eng-10-QP1A.191105.004-413-test-keys'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/dolphin/dolphin_fvd_p1'
+        default: 'device/google/eros-p1'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -32,11 +32,11 @@ on:
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'dolphin_fvd_p1'
+        default: 'eros-p1'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_dolphin'
+        default: 'twrp_eros-p1'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
@@ -148,7 +148,7 @@ jobs:
       run: |
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
-        lunch  twrp_dolphin-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
+        lunch  twrp_eros-p1-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Upload to Release
