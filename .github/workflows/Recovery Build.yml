@@ -168,4 +168,4 @@ jobs:
           Device: ${{ github.event.inputs.DEVICE_NAME }}
           Target: ${{ github.event.inputs.BUILD_TARGET }}.img
       env:
-        APP: ${{ secrets.APP }}
+        TEST2025: ${{ secrets.TEST2025 }}
