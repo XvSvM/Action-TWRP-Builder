@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/XvSvM/H728PROPLUS.git'
+        default: 'https://github.com/XvSvM/TESTH728.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'diana_p1_arm64-userdebug-14-UP1A.231105.001.A1-eng.ubuntu.20240807.160822-release-keys'
+        default: 'x96q.pro.plus'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
