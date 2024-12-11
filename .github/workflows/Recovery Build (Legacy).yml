@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/XvSvM/H3_device_dolphin_dolphin_fvd_p1.git'
+        default: 'https://github.com/XvSvM/NIKITA.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'dolphin_fvd_p1-eng-7.0-NRD91N-20230311-test-keys'
+        default: 'ampere-user-12-STTC.220815.001-20230728-release-keys'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/dolphin/dolphin_fvd_p1'
+        default: 'device/amlogic/ampere'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -36,7 +36,7 @@ on:
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_dolphin'
+        default: 'twrp_ampere'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
@@ -148,7 +148,7 @@ jobs:
       run: |
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
-        lunch  twrp_dolphin-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
+        lunch  twrp_ampere-eng && make clean && make ${{ github.event.inputs.BUILD_TARGET }}image -j$(nproc --all)
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
 
     - name: Upload to Release
