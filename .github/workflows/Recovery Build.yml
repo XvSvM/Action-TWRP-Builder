@@ -14,15 +14,15 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/XvSvM/NIKITA.git'
+        default: 'https://github.com/XvSvM/Ampere9aCTM.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'ampere-user-12-STTC.220815.001-20230728-release-keys'
+        default: 'ampere-user-9-PI-20220302-release-keys'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/amlogic/ampere'
+        default: 'device/droidlogic/ampere'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
