@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/XvSvM/12.1TWPX96QPROPLIS.git'
+        default: 'https://github.com/XvSvM/H728SLM.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'twrp12.1X96qproplush728'
+        default: 'diana_p1_arm64-userdebug-14-UP1A.231105.001.A1-eng.ubuntu.20250217.194226-release-keys'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
